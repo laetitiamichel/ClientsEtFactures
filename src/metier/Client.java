@@ -1,18 +1,26 @@
 package metier;
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
+
 
 public class Client
 {
+	public static void main(String[] args) {
+		Client c= new Client ("gertrude");
+		Scanner scanner = new Scanner(System.in);
+		System.out.println(c.getNom()); }
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
 	 */
-	
-	public Client(String nom)
+	private String Nom;
+	public Client(String Nom)
 	{
+		this.Nom = Nom;
 	}
+	
 
 	/**
 	 * Retourne le nom du client.
@@ -21,7 +29,7 @@ public class Client
 	
 	public String getNom()
 	{
-		return null;
+		return Nom;
 	}
 	
 	/**
@@ -29,8 +37,9 @@ public class Client
 	 * @param nom le nom du client.
 	 */
 	
-	public void setNom(String nom)
+	public void setNom(String Nom)
 	{
+		Nom = Nom;
 	}
 	
 	/**
@@ -104,3 +113,4 @@ public class Client
 	{
 	}
 }
+
